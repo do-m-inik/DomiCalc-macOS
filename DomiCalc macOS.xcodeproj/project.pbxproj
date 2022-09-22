@@ -14,6 +14,7 @@
 		268E001528DCF87E0094A822 /* DomiCalc_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E001428DCF87E0094A822 /* DomiCalc_macOSTests.swift */; };
 		268E001F28DCF87E0094A822 /* DomiCalc_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E001E28DCF87E0094A822 /* DomiCalc_macOSUITests.swift */; };
 		268E002128DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E002028DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift */; };
+		268E002F28DCFBBD0094A822 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E002E28DCFBBD0094A822 /* Input.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		268E001A28DCF87E0094A822 /* DomiCalc macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DomiCalc macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268E001E28DCF87E0094A822 /* DomiCalc_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomiCalc_macOSUITests.swift; sourceTree = "<group>"; };
 		268E002028DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomiCalc_macOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		268E002E28DCFBBD0094A822 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		268EFFFF28DCF87B0094A822 /* DomiCalc macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DomiCalc macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 		268E000128DCF87B0094A822 /* DomiCalc macOS */ = {
 			isa = PBXGroup;
 			children = (
+				268E002E28DCFBBD0094A822 /* Input.swift */,
 				268E000228DCF87B0094A822 /* DomiCalc_macOSApp.swift */,
 				268E000428DCF87B0094A822 /* ContentView.swift */,
 				268E000628DCF87E0094A822 /* Assets.xcassets */,
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				268E000528DCF87B0094A822 /* ContentView.swift in Sources */,
+				268E002F28DCFBBD0094A822 /* Input.swift in Sources */,
 				268E000328DCF87B0094A822 /* DomiCalc_macOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
