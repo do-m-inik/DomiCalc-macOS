@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		268E000328DCF87B0094A822 /* DomiCalc_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E000228DCF87B0094A822 /* DomiCalc_macOSApp.swift */; };
+		268E000528DCF87B0094A822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E000428DCF87B0094A822 /* ContentView.swift */; };
+		268E000728DCF87E0094A822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268E000628DCF87E0094A822 /* Assets.xcassets */; };
+		268E000A28DCF87E0094A822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268E000928DCF87E0094A822 /* Preview Assets.xcassets */; };
+		268E001528DCF87E0094A822 /* DomiCalc_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E001428DCF87E0094A822 /* DomiCalc_macOSTests.swift */; };
+		268E001F28DCF87E0094A822 /* DomiCalc_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E001E28DCF87E0094A822 /* DomiCalc_macOSUITests.swift */; };
+		268E002128DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E002028DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		268E001128DCF87E0094A822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268EFFF728DCF87B0094A822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268EFFFE28DCF87B0094A822;
+			remoteInfo = "DomiCalc macOS";
+		};
+		268E001B28DCF87E0094A822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268EFFF728DCF87B0094A822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268EFFFE28DCF87B0094A822;
+			remoteInfo = "DomiCalc macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		268E000228DCF87B0094A822 /* DomiCalc_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomiCalc_macOSApp.swift; sourceTree = "<group>"; };
+		268E000428DCF87B0094A822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		268E000628DCF87E0094A822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		268E000928DCF87E0094A822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		268E000B28DCF87E0094A822 /* DomiCalc_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DomiCalc_macOS.entitlements; sourceTree = "<group>"; };
+		268E001028DCF87E0094A822 /* DomiCalc macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DomiCalc macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		268E001428DCF87E0094A822 /* DomiCalc_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomiCalc_macOSTests.swift; sourceTree = "<group>"; };
+		268E001A28DCF87E0094A822 /* DomiCalc macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DomiCalc macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		268E001E28DCF87E0094A822 /* DomiCalc_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomiCalc_macOSUITests.swift; sourceTree = "<group>"; };
+		268E002028DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomiCalc_macOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		268EFFFF28DCF87B0094A822 /* DomiCalc macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DomiCalc macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268E000D28DCF87E0094A822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268E001728DCF87E0094A822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268EFFFC28DCF87B0094A822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		268E000028DCF87B0094A822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268EFFFF28DCF87B0094A822 /* DomiCalc macOS.app */,
+				268E001028DCF87E0094A822 /* DomiCalc macOSTests.xctest */,
+				268E001A28DCF87E0094A822 /* DomiCalc macOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268E000128DCF87B0094A822 /* DomiCalc macOS */ = {
+			isa = PBXGroup;
+			children = (
+				268E000228DCF87B0094A822 /* DomiCalc_macOSApp.swift */,
+				268E000428DCF87B0094A822 /* ContentView.swift */,
+				268E000628DCF87E0094A822 /* Assets.xcassets */,
+				268E000B28DCF87E0094A822 /* DomiCalc_macOS.entitlements */,
+				268E000828DCF87E0094A822 /* Preview Content */,
+			);
+			path = "DomiCalc macOS";
+			sourceTree = "<group>";
+		};
+		268E000828DCF87E0094A822 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				268E000928DCF87E0094A822 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		268E001328DCF87E0094A822 /* DomiCalc macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				268E001428DCF87E0094A822 /* DomiCalc_macOSTests.swift */,
+			);
+			path = "DomiCalc macOSTests";
+			sourceTree = "<group>";
+		};
+		268E001D28DCF87E0094A822 /* DomiCalc macOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				268E001E28DCF87E0094A822 /* DomiCalc_macOSUITests.swift */,
+				268E002028DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift */,
+			);
+			path = "DomiCalc macOSUITests";
+			sourceTree = "<group>";
+		};
+		268EFFF628DCF87B0094A822 = {
+			isa = PBXGroup;
+			children = (
+				268E000128DCF87B0094A822 /* DomiCalc macOS */,
+				268E001328DCF87E0094A822 /* DomiCalc macOSTests */,
+				268E001D28DCF87E0094A822 /* DomiCalc macOSUITests */,
+				268E000028DCF87B0094A822 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		268E000F28DCF87E0094A822 /* DomiCalc macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268E002728DCF87E0094A822 /* Build configuration list for PBXNativeTarget "DomiCalc macOSTests" */;
+			buildPhases = (
+				268E000C28DCF87E0094A822 /* Sources */,
+				268E000D28DCF87E0094A822 /* Frameworks */,
+				268E000E28DCF87E0094A822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268E001228DCF87E0094A822 /* PBXTargetDependency */,
+			);
+			name = "DomiCalc macOSTests";
+			productName = "DomiCalc macOSTests";
+			productReference = 268E001028DCF87E0094A822 /* DomiCalc macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		268E001928DCF87E0094A822 /* DomiCalc macOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268E002A28DCF87E0094A822 /* Build configuration list for PBXNativeTarget "DomiCalc macOSUITests" */;
+			buildPhases = (
+				268E001628DCF87E0094A822 /* Sources */,
+				268E001728DCF87E0094A822 /* Frameworks */,
+				268E001828DCF87E0094A822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268E001C28DCF87E0094A822 /* PBXTargetDependency */,
+			);
+			name = "DomiCalc macOSUITests";
+			productName = "DomiCalc macOSUITests";
+			productReference = 268E001A28DCF87E0094A822 /* DomiCalc macOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		268EFFFE28DCF87B0094A822 /* DomiCalc macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268E002428DCF87E0094A822 /* Build configuration list for PBXNativeTarget "DomiCalc macOS" */;
+			buildPhases = (
+				268EFFFB28DCF87B0094A822 /* Sources */,
+				268EFFFC28DCF87B0094A822 /* Frameworks */,
+				268EFFFD28DCF87B0094A822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DomiCalc macOS";
+			productName = "DomiCalc macOS";
+			productReference = 268EFFFF28DCF87B0094A822 /* DomiCalc macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		268EFFF728DCF87B0094A822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					268E000F28DCF87E0094A822 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 268EFFFE28DCF87B0094A822;
+					};
+					268E001928DCF87E0094A822 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 268EFFFE28DCF87B0094A822;
+					};
+					268EFFFE28DCF87B0094A822 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 268EFFFA28DCF87B0094A822 /* Build configuration list for PBXProject "DomiCalc macOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 268EFFF628DCF87B0094A822;
+			productRefGroup = 268E000028DCF87B0094A822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268EFFFE28DCF87B0094A822 /* DomiCalc macOS */,
+				268E000F28DCF87E0094A822 /* DomiCalc macOSTests */,
+				268E001928DCF87E0094A822 /* DomiCalc macOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268E000E28DCF87E0094A822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268E001828DCF87E0094A822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268EFFFD28DCF87B0094A822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268E000A28DCF87E0094A822 /* Preview Assets.xcassets in Resources */,
+				268E000728DCF87E0094A822 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268E000C28DCF87E0094A822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268E001528DCF87E0094A822 /* DomiCalc_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268E001628DCF87E0094A822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268E002128DCF87E0094A822 /* DomiCalc_macOSUITestsLaunchTests.swift in Sources */,
+				268E001F28DCF87E0094A822 /* DomiCalc_macOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268EFFFB28DCF87B0094A822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268E000528DCF87B0094A822 /* ContentView.swift in Sources */,
+				268E000328DCF87B0094A822 /* DomiCalc_macOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268E001228DCF87E0094A822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268EFFFE28DCF87B0094A822 /* DomiCalc macOS */;
+			targetProxy = 268E001128DCF87E0094A822 /* PBXContainerItemProxy */;
+		};
+		268E001C28DCF87E0094A822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268EFFFE28DCF87B0094A822 /* DomiCalc macOS */;
+			targetProxy = 268E001B28DCF87E0094A822 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		268E002228DCF87E0094A822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		268E002328DCF87E0094A822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		268E002528DCF87E0094A822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DomiCalc macOS/DomiCalc_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DomiCalc macOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.do-m-inik.app.DomiCalc-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		268E002628DCF87E0094A822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DomiCalc macOS/DomiCalc_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DomiCalc macOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.do-m-inik.app.DomiCalc-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		268E002828DCF87E0094A822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.do-m-inik.app.DomiCalc-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DomiCalc macOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DomiCalc macOS";
+			};
+			name = Debug;
+		};
+		268E002928DCF87E0094A822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.do-m-inik.app.DomiCalc-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DomiCalc macOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DomiCalc macOS";
+			};
+			name = Release;
+		};
+		268E002B28DCF87E0094A822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.do-m-inik.app.DomiCalc-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "DomiCalc macOS";
+			};
+			name = Debug;
+		};
+		268E002C28DCF87E0094A822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.do-m-inik.app.DomiCalc-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "DomiCalc macOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268E002428DCF87E0094A822 /* Build configuration list for PBXNativeTarget "DomiCalc macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268E002528DCF87E0094A822 /* Debug */,
+				268E002628DCF87E0094A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268E002728DCF87E0094A822 /* Build configuration list for PBXNativeTarget "DomiCalc macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268E002828DCF87E0094A822 /* Debug */,
+				268E002928DCF87E0094A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268E002A28DCF87E0094A822 /* Build configuration list for PBXNativeTarget "DomiCalc macOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268E002B28DCF87E0094A822 /* Debug */,
+				268E002C28DCF87E0094A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268EFFFA28DCF87B0094A822 /* Build configuration list for PBXProject "DomiCalc macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268E002228DCF87E0094A822 /* Debug */,
+				268E002328DCF87E0094A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 268EFFF728DCF87B0094A822 /* Project object */;
+}
