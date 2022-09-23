@@ -14,91 +14,91 @@ struct ContentView: View {
             Text("0")
             TextField("Text Input", text: $textInput)
             HStack {
-                Button(action: typeSeven) {
+                Button(action: {buttonInput(charInput: "C")}) {
                     Text("C")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeEight) {
+                Button(action: {buttonInput(charInput: "^")}) {
                     Text("^")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeNine) {
+                Button(action: {buttonInput(charInput: "(")}) {
                     Text("(")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeDiv) {
+                Button(action: {buttonInput(charInput: ")")}) {
                     Text(")")
                         .frame(maxWidth: 100)
                 }
             }
             HStack {
-                Button(action: typeSeven) {
+                Button(action: {buttonInput(charInput: "7")}) {
                     Text("7")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeEight) {
+                Button(action: {buttonInput(charInput: "8")}) {
                     Text("8")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeNine) {
+                Button(action: {buttonInput(charInput: "9")}) {
                     Text("9")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeDiv) {
+                Button(action: {buttonInput(charInput: "/")}) {
                     Text("/")
                         .frame(maxWidth: 100)
                 }
             }
             HStack {
-                Button(action: typeFour) {
+                Button(action: {buttonInput(charInput: "4")}) {
                     Text("4")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeFive) {
+                Button(action: {buttonInput(charInput: "5")}) {
                     Text("5")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeSix) {
+                Button(action: {buttonInput(charInput: "6")}) {
                     Text("6")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeMul) {
+                Button(action: {buttonInput(charInput: "*")}) {
                     Text("*")
                         .frame(maxWidth: 100)
                 }
             }
             HStack {
-                Button(action: typeOne) {
+                Button(action: {buttonInput(charInput: "1")}) {
                     Text("1")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeTwo) {
+                Button(action: {buttonInput(charInput: "2")}) {
                     Text("2")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeThree) {
+                Button(action: {buttonInput(charInput: "3")}) {
                     Text("3")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeMinus) {
+                Button(action: {buttonInput(charInput: ")-")}) {
                     Text("-")
                         .frame(maxWidth: 100)
                 }
             }
             HStack {
-                Button(action: typeZero) {
+                Button(action: {buttonInput(charInput: "0")}) {
                     Text("0")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeComma) {
+                Button(action: {buttonInput(charInput: ".")}) {
                     Text(".")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typeSolve) {
+                Button(action: {buttonInput(charInput: "=")}) {
                     Text("=")
                         .frame(maxWidth: 100)
                 }
-                Button(action: typePlus) {
+                Button(action: {buttonInput(charInput: "+")}) {
                     Text("+")
                         .frame(maxWidth: 100)
                 }
