@@ -7,4 +7,4 @@
 
 import Foundation
 
-var textInput = ""
+var textInput = "" // The input given by the textfield

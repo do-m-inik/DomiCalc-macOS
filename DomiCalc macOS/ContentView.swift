@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @State var textInput: String = ""
-    @State var toBeParsedArray: [String] = []
+    @State var toBeParsedArray: [String] = [] // Array that gets parsed to a calculation
     func buttonInput(charInput: String) {
-        if("1234567890+-=".contains(charInput)) {
+        if("1234567890+-=".contains(charInput)) { // Check if number/operation is supported
             toBeParsedArray.append(charInput)
         }
     }
     var body: some View {
         VStack {
-            Text(toBeParsedArray
-                    .joined(separator: ""))
+            Text(toBeParsedArray // Array dispayed in calculator
+                    .joined(separator: "")) // Replaces newline after each array element to nothing
             TextField("Text Input", text: $textInput)
             HStack {
                 Button(action: {buttonInput(charInput: "C")}) {
