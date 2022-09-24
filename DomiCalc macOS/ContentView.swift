@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @State var textInput: String = ""
+    @State var toBeParsedArray: [String] = []
     var body: some View {
         VStack {
-            Text("0")
+            //Text(toBeParsedArray)
+            //dump(toBeParsedArray)
+            ForEach(toBeParsedArray, id: \.self) { String in
+                Text(String.description.capitalized)
+            }
             TextField("Text Input", text: $textInput)
             HStack {
                 Button(action: {buttonInput(charInput: "C")}) {
