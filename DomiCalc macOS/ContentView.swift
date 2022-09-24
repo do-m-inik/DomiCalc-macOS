@@ -34,6 +34,10 @@ struct ContentView: View {
                 }
                 lastChar = charInUnparsedArray // Saves the current char to use it for the next iteration
             }
+        } else if("C".contains(charInput)) { // Removes all elements of the to be parsed array
+            toBeParsedArray.removeAll()
+        } else if("<".contains(charInput) && !toBeParsedArray.isEmpty) { // Deletes the last array element to delete the last char
+            toBeParsedArray.removeLast()
         }
     }
     var body: some View {
@@ -46,16 +50,34 @@ struct ContentView: View {
                     Text("C")
                         .frame(maxWidth: 100)
                 }
-                Button(action: {buttonInput(charInput: "^")}) {
-                    Text("^")
-                        .frame(maxWidth: 100)
-                }
                 Button(action: {buttonInput(charInput: "(")}) {
                     Text("(")
                         .frame(maxWidth: 100)
                 }
                 Button(action: {buttonInput(charInput: ")")}) {
                     Text(")")
+                        .frame(maxWidth: 100)
+                }
+                Button(action: {buttonInput(charInput: "<")}) {
+                    Text("<")
+                        .frame(maxWidth: 100)
+                }
+            }
+            HStack {
+                Button(action: {buttonInput(charInput: "^2")}) {
+                    Text("^2")
+                        .frame(maxWidth: 100)
+                }
+                Button(action: {buttonInput(charInput: "^y")}) {
+                    Text("^y")
+                        .frame(maxWidth: 100)
+                }
+                Button(action: {buttonInput(charInput: "%")}) {
+                    Text("%")
+                        .frame(maxWidth: 100)
+                }
+                Button(action: {buttonInput(charInput: "!")}) {
+                    Text("!")
                         .frame(maxWidth: 100)
                 }
             }
