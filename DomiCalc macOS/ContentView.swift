@@ -10,9 +10,30 @@ import SwiftUI
 struct ContentView: View {
     @State var textInput: String = ""
     @State var toBeParsedArray: [String] = [] // Array that gets parsed to a calculation
+    var calcResult = Int64(0)
     func buttonInput(charInput: String) {
-        if("1234567890+-=".contains(charInput)) { // Check if number/operation is supported
+        if("1234567890+-".contains(charInput)) { // Check if number/operation is supported
             toBeParsedArray.append(charInput)
+        } else if("=".contains(charInput)) { // Start of parsing algorithm
+            toBeParsedArray.append(charInput)
+            var parsedArray: [String] = [] // Start of init
+            parsedArray.append("#")
+            var posInParsedArray = 0
+            var lastChar = parsedArray[posInParsedArray] // End of init
+            for charInUnparsedArray in toBeParsedArray {
+                if("1234567890".contains(charInUnparsedArray)) {
+                    if("1234567890".contains(lastChar)) { // Appends current number to build the number in one array element
+                        parsedArray[posInParsedArray] = parsedArray[posInParsedArray] + charInUnparsedArray
+                    } else { // Goes forward because the last char was not a number
+                        posInParsedArray += 1
+                        parsedArray.append(charInUnparsedArray)
+                    }
+                } else if("+-=".contains(charInUnparsedArray)) {
+                    posInParsedArray += 1
+                    parsedArray.append(charInUnparsedArray)
+                }
+                lastChar = charInUnparsedArray // Saves the current char to use it for the next iteration
+            }
         }
     }
     var body: some View {
