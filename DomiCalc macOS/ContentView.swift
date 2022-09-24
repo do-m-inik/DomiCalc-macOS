@@ -10,13 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @State var textInput: String = ""
     @State var toBeParsedArray: [String] = []
+    func buttonInput(charInput: String) {
+        if("1234567890+-=".contains(charInput)) {
+            toBeParsedArray.append(charInput)
+        }
+    }
     var body: some View {
         VStack {
-            //Text(toBeParsedArray)
-            //dump(toBeParsedArray)
-            ForEach(toBeParsedArray, id: \.self) { String in
-                Text(String.description.capitalized)
-            }
+            Text(toBeParsedArray
+                    .joined(separator: ""))
             TextField("Text Input", text: $textInput)
             HStack {
                 Button(action: {buttonInput(charInput: "C")}) {
@@ -85,7 +87,7 @@ struct ContentView: View {
                     Text("3")
                         .frame(maxWidth: 100)
                 }
-                Button(action: {buttonInput(charInput: ")-")}) {
+                Button(action: {buttonInput(charInput: "-")}) {
                     Text("-")
                         .frame(maxWidth: 100)
                 }

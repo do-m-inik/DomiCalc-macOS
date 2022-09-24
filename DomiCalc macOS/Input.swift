@@ -8,9 +8,3 @@
 import Foundation
 
 var textInput = ""
-
-func buttonInput(charInput: String) {
-    //if("1234567890+-".contains(charInput)) {
-        toBeParsedArray.append(charInput)
-    //}
-}
