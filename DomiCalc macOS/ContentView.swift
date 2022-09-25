@@ -10,13 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @State var textInput: String = ""
     @State var toBeParsedArray: [String] = [] // Array that gets parsed to a calculation
-    var calcResult = Int64(0)
     func buttonInput(charInput: String) {
         if("1234567890+-".contains(charInput)) { // Check if number/operation is supported
             toBeParsedArray.append(charInput)
+        } else if("C".contains(charInput)) { // Removes all elements of the to be parsed array
+                toBeParsedArray.removeAll()
+        } else if("<".contains(charInput) && !toBeParsedArray.isEmpty) { // Deletes the last array element to delete the last char
+                toBeParsedArray.removeLast()
         } else if("=".contains(charInput)) { // Start of parsing algorithm
             toBeParsedArray.append(charInput)
             var parsedArray: [String] = [] // Start of init
+            var savedNumbers: [Int64] = []
+            var calcResult = Int64(0)
             parsedArray.append("#")
             var posInParsedArray = 0
             var lastChar = parsedArray[posInParsedArray] // End of init
@@ -34,10 +39,31 @@ struct ContentView: View {
                 }
                 lastChar = charInUnparsedArray // Saves the current char to use it for the next iteration
             }
-        } else if("C".contains(charInput)) { // Removes all elements of the to be parsed array
-            toBeParsedArray.removeAll()
-        } else if("<".contains(charInput) && !toBeParsedArray.isEmpty) { // Deletes the last array element to delete the last char
-            toBeParsedArray.removeLast()
+            parsedArray.append("?") // Marking the end of the calculation
+            var lastElem = "#"
+            parsedArray.insert("+", at: 1)
+            for elem in parsedArray {
+                if(Int64(elem) != nil) { // Check if element is a number
+                    savedNumbers.append(Int64(elem) ?? Int64(0)) // Saves the numbers of the equation in a seperate Int64 array
+                }
+                if(Int64(lastElem) == nil && lastElem != "#") { // Checking the operator
+                    switch(lastElem) {
+                    case "+":
+                        for elemInSavedNumbers in savedNumbers {
+                            calcResult += elemInSavedNumbers
+                        }
+                    case "-":
+                        for elemInSavedNumbers in savedNumbers {
+                            calcResult -= elemInSavedNumbers
+                        }
+                    default:
+                        if(0 == 0) {} // Do nothing if the operator is not plus or minus
+                    }
+                    savedNumbers.removeAll()
+                }
+                lastElem = elem
+            }
+            toBeParsedArray.append(String(calcResult)) // Result gets printed to the input
         }
     }
     var body: some View {
