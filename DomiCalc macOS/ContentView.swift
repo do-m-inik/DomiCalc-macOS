@@ -13,7 +13,7 @@ struct ContentView: View {
     func textInputFunc() { // Function for the text input
         var equalSignIsTyped = false // Check if the equal sign is typed in the textfield
         for charInInputString in textInput { // Every char gets into the button input function
-            var charInInputStringAsString = String(charInInputString) // The foreach loop converts the string to chars. This must be reverted.
+            let charInInputStringAsString = String(charInInputString) // The foreach loop converts the string to chars. This must be reverted.
             buttonInput(charInput: charInInputStringAsString)
             if(charInInputStringAsString == "=") {
                 equalSignIsTyped = true
