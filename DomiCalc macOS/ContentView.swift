@@ -10,6 +10,19 @@ import SwiftUI
 struct ContentView: View {
     @State var textInput: String = ""
     @State var toBeParsedArray: [String] = [] // Array that gets parsed to a calculation
+    func textInputFunc() { // Function for the text input
+        var equalSignIsTyped = false // Check if the equal sign is typed in the textfield
+        for charInInputString in textInput { // Every char gets into the button input function
+            var charInInputStringAsString = String(charInInputString) // The foreach loop converts the string to chars. This must be reverted.
+            buttonInput(charInput: charInInputStringAsString)
+            if(charInInputStringAsString == "=") {
+                equalSignIsTyped = true
+            }
+        }
+        if (equalSignIsTyped == false) {
+            buttonInput(charInput: "=")
+        }
+    }
     func buttonInput(charInput: String) {
         if("1234567890+-".contains(charInput)) { // Check if number/operation is supported
             toBeParsedArray.append(charInput)
@@ -70,7 +83,16 @@ struct ContentView: View {
         VStack {
             Text(toBeParsedArray // Array dispayed in calculator
                     .joined(separator: "")) // Replaces newline after each array element to nothing
-            TextField("Text Input", text: $textInput)
+            HStack {
+                TextField("Text Input", text: $textInput)
+                    .onSubmit { // Executes the textfield if the RETURN key is typed.
+                        textInputFunc()
+                    }
+                Button(action: textInputFunc) { // Seperated Calc button if someone does not want to press the RETURN key
+                    Text("Calc")
+                        .frame(maxWidth: 40)
+                }
+            }
             HStack {
                 Button(action: {buttonInput(charInput: "C")}) {
                     Text("C")
