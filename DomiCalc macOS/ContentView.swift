@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var textInput: String = ""
     @State var toBeParsedArray: [String] = [] // Array that gets parsed to a calculation
+    func doNothing() {} // Does nothing, used as default for the switch cases
     func textInputFunc() { // Function for the text input
         var equalSignIsTyped = false // Check if the equal sign is typed in the textfield
         for charInInputString in textInput { // Every char gets into the button input function
@@ -33,9 +34,10 @@ struct ContentView: View {
         } else if("=".contains(charInput)) { // Start of parsing algorithm
             toBeParsedArray.append(charInput)
             var parsedArray: [String] = [] // Start of init
-            var savedNumbers: [Int64] = []
+            var savedNumbersBeforeComma: [Int64] = []
             var calcResultBeforeComma = Int64(0)
             var calcResultAfterComma = Int64(0)
+            var lastOperator = "+"
             parsedArray.append("#")
             var posInParsedArray = 0
             var lastChar = parsedArray[posInParsedArray] // End of init
@@ -57,27 +59,45 @@ struct ContentView: View {
             var lastElem = "#"
             parsedArray.insert("+", at: 1)
             for elem in parsedArray {
-                if(Int64(elem) != nil) { // Check if element is a number
-                    savedNumbers.append(Int64(elem) ?? Int64(0)) // Saves the numbers of the equation in a seperate Int64 array
+                if(elem == "+") { // Saves the last operator to be used for the number after the comma
+                    lastOperator = "+"
+                } else if(elem == "-") {
+                    lastOperator = "-"
                 }
-                if(Int64(lastElem) == nil && lastElem != "#") { // Checking the operator
+                if(Int64(elem) != nil) { // Check if element is a number
+                    savedNumbersBeforeComma.append(Int64(elem) ?? Int64(0)) // Saves the numbers of the equation in a seperate Int64 array
+                }
+                if(Int64(lastElem) == nil && lastElem != "#") { // Checking the operator or comma
                     switch(lastElem) {
                     case "+":
-                        for elemInSavedNumbers in savedNumbers {
+                        for elemInSavedNumbers in savedNumbersBeforeComma {
                             calcResultBeforeComma += elemInSavedNumbers
                         }
                     case "-":
-                        for elemInSavedNumbers in savedNumbers {
+                        for elemInSavedNumbers in savedNumbersBeforeComma {
                             calcResultBeforeComma -= elemInSavedNumbers
                         }
+                    case ".":
+                        switch(lastOperator) { // Part for the number after the comma
+                        case "+":
+                            calcResultAfterComma += Int64(elem) ?? Int64(0)
+                        case "-":
+                            calcResultAfterComma -= Int64(elem) ?? Int64(0)
+                        default:
+                            doNothing()
+                        }
                     default:
-                        if(0 == 0) {} // Do nothing if the operator is not plus or minus
+                        doNothing()
                     }
-                    savedNumbers.removeAll()
+                    savedNumbersBeforeComma.removeAll()
                 }
                 lastElem = elem
             }
             toBeParsedArray.append(String(calcResultBeforeComma)) // Result gets printed to the input
+            if(calcResultAfterComma != 0) { // If a number after the comma exists it prints it too
+                toBeParsedArray.append(".")
+                toBeParsedArray.append(String(calcResultAfterComma))
+            }
         }
     }
     var body: some View {
