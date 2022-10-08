@@ -35,6 +35,7 @@ struct ContentView: View {
             var parsedArray: [String] = [] // Start of init
             var savedNumbers: [Int64] = []
             var calcResultBeforeComma = Int64(0)
+            var calcResultAfterComma = Int64(0)
             parsedArray.append("#")
             var posInParsedArray = 0
             var lastChar = parsedArray[posInParsedArray] // End of init
@@ -76,7 +77,7 @@ struct ContentView: View {
                 }
                 lastElem = elem
             }
-            toBeParsedArray.append(String(calcResult)) // Result gets printed to the input
+            toBeParsedArray.append(String(calcResultBeforeComma)) // Result gets printed to the input
         }
     }
     var body: some View {
