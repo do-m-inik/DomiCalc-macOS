@@ -24,7 +24,7 @@ struct ContentView: View {
         }
     }
     func buttonInput(charInput: String) {
-        if("1234567890+-".contains(charInput)) { // Check if number/operation is supported
+        if("1234567890+-.".contains(charInput)) { // Check if number/operation is supported
             toBeParsedArray.append(charInput)
         } else if("C".contains(charInput)) { // Removes all elements of the to be parsed array
                 toBeParsedArray.removeAll()
