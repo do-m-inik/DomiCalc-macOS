@@ -47,7 +47,7 @@ struct ContentView: View {
                         posInParsedArray += 1
                         parsedArray.append(charInUnparsedArray)
                     }
-                } else if("+-=".contains(charInUnparsedArray)) {
+                } else if("+-.=".contains(charInUnparsedArray)) {
                     posInParsedArray += 1
                     parsedArray.append(charInUnparsedArray)
                 }
