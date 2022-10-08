@@ -34,7 +34,7 @@ struct ContentView: View {
             toBeParsedArray.append(charInput)
             var parsedArray: [String] = [] // Start of init
             var savedNumbers: [Int64] = []
-            var calcResult = Int64(0)
+            var calcResultBeforeComma = Int64(0)
             parsedArray.append("#")
             var posInParsedArray = 0
             var lastChar = parsedArray[posInParsedArray] // End of init
@@ -63,11 +63,11 @@ struct ContentView: View {
                     switch(lastElem) {
                     case "+":
                         for elemInSavedNumbers in savedNumbers {
-                            calcResult += elemInSavedNumbers
+                            calcResultBeforeComma += elemInSavedNumbers
                         }
                     case "-":
                         for elemInSavedNumbers in savedNumbers {
-                            calcResult -= elemInSavedNumbers
+                            calcResultBeforeComma -= elemInSavedNumbers
                         }
                     default:
                         if(0 == 0) {} // Do nothing if the operator is not plus or minus
