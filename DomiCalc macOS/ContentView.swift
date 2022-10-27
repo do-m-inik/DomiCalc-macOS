@@ -80,7 +80,15 @@ struct ContentView: View {
                     case ".":
                         switch(lastOperator) { // Part for the number after the comma
                         case "+":
-                            calcResultAfterComma += Int64(elem) ?? Int64(0)
+                            let resultForAfterComma = calcResultAfterComma + (Int64(elem) ?? Int64(0))
+                            let digitsOfResultAfterComma = getDigits(inputNumber: resultForAfterComma)
+                            if(digitsOfResultAfterComma == getDigits(inputNumber: (Int64(elem) ?? Int64(0)))) { // Check if there is a overflow after the comma
+                                calcResultAfterComma += Int64(elem) ?? Int64(0) // There is no overflow, do everything normal
+                            } else {
+                                calcResultAfterComma += Int64(elem) ?? Int64(0) // There is a overflow, remove 1 from before the comma
+                                calcResultAfterComma -= Int64(ownPowOf10(power: digitsOfResultAfterComma-1))
+                                calcResultBeforeComma += 1
+                            }
                         case "-":
                             calcResultAfterComma -= Int64(elem) ?? Int64(0)
                         default:
@@ -99,6 +107,24 @@ struct ContentView: View {
                 toBeParsedArray.append(String(calcResultAfterComma))
             }
         }
+    }
+    func getDigits(inputNumber: Int64) -> Int { // Getting the digits count of a given number
+        var number = inputNumber
+        var digitsCount = 1
+        while(number >= 10) {
+            digitsCount += 1
+            number = number / 10
+        }
+        return digitsCount
+    }
+    func ownPowOf10(power: Int) -> Int64 { // Implemented own power of 10 function because the Swift pow and ^ does not work as it should be
+        var result = Int64(10)
+        var powerAsVar = power
+        while(powerAsVar > 1) {
+            result = result * 10
+            powerAsVar -= 1
+        }
+        return result
     }
     var body: some View {
         VStack {
